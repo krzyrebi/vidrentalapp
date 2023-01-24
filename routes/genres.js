@@ -86,7 +86,7 @@ router.put('/:id', async (req, res) => {
     res.send(genre);
 });
 
-router.delete('/:id', [auth, admin], async (req, res) => {
+router.delete('/:id', async (req, res) => {
     // [auth, admin] - funkcje middleware, beda wykonane w tej kolejnosci
     const genre = await Genre.findOneAndRemove(req.params.id)
 
