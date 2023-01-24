@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
     // const { error } = validate(req.body);
     // if (error) return res.status(400).send(error.details[0].message);
 
-    const genre = await Genre.findById(req.body.genre)         //  !!!!!! dlaczego genreID? importowane z validate movies?
+    const genre = await Genre.findOne({genre: req.body.genre})         //  !!!!!! dlaczego genreID? importowane z validate movies?
     if (!genre) return res.status(400).send('Invalid Genre')        // sprawdzamy czy podano wlasciwa kategorie filmu w requescie
 
     const movie = new Movie({    
