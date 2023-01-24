@@ -38,11 +38,11 @@ process.on('unhandledRejection', (ex) => {
 // .then(() => console.log('Done')) // do testowania unhandled rejection
 
 
-if (!config.get('jwtPrivateKey')) {
-    console.error('Fatal error: jwtPrivateKey is not defined')
-    process.exit(1)
-    // tutaj mowimy, ze jesli jwtprivatekey nie jest ustalone (environment variable), to zakoncz proces
-}
+// if (!config.get('jwtPrivateKey')) {
+//     console.error('Fatal error: jwtPrivateKey is not defined')
+//     process.exit(1)
+//     // tutaj mowimy, ze jesli jwtprivatekey nie jest ustalone (environment variable), to zakoncz proces
+// }
 
 //  zeby to dzialalo, to ustalamy w terminalu environment variable:
 // export vidly_jwtPrivateKey=mySecureKey
