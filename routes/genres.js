@@ -1,8 +1,8 @@
 // trzeba poprawic JOI, bo nie dziala
 
 // const asyncMiddleware = require('../middleware/async')  // to jest wersja bez express-async-errors
-const auth = require('../middleware/auth')
-const admin = require('../middleware/admin')
+// const auth = require('../middleware/auth')
+// const admin = require('../middleware/admin')
 const mongoose = require('mongoose') 
 const {Genre, validate} = require('../models/genre') 
 const express = require('express')
