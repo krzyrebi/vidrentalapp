@@ -1,7 +1,6 @@
 require('express-async-errors')
 const error = require('./middleware/error')
 const logger = require('./logger')
-const config = require('config')
 // musimy sie upewnic ze przy starcie aplikacji nasza environment variable jest set, bo inaczej authentication endpoint nie bedzie dzialac 
 const mongoose = require('mongoose')        // load mongoose
 const genres = require('./routes/genres')
@@ -9,7 +8,6 @@ const customers = require('./routes/customers')
 const movies = require('./routes/movies')
 const rentals = require('./routes/rentals')
 const users = require('./routes/users')
-const auth = require('./routes/auth')
 const express = require('express')
 const cors = require('cors')
 const app = express()
