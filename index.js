@@ -65,8 +65,7 @@ app.use('/api/genres', genres)  // tutaj mowimy expressowi, zeby dla kazdych rou
 app.use('/api/customers', customers)
 app.use('/api/movies', movies)
 app.use('/api/rentals', rentals)
-app.use('/api/users', users)
-app.use('/api/auth', auth)
+
 
 app.use(error)
 // tutaj dajemy nasza error middleware function, przenieslismy ja do oddzielnego modulu middleware/error.js
